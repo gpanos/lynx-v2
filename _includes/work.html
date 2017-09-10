@@ -1,0 +1,59 @@
+<section class="work" id="work">
+    <div class="container">
+        <div class="row">
+            <div class="container text-container title add-animation">
+                <h1 class="display-4">Projects</h1>
+            </div>
+        </div>
+    </div>
+    <div class="work-wrapper">
+        <div class="container slider">
+            <div class="row">
+                <div class="cards-container">
+                    <div class="col-md-12">
+                        {% for project in site.data.work.projects %}
+                        <div class="col-md-4 work-container"
+                             data-file="{{project.file}}"
+                        >
+                            <div class="card text-xs-center add-animation"
+                                 data-order="{{project.order}}"
+                            >    
+                                <div class="show-gallery-overlay">
+                                    <div class="plus-icon-wrapper">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </div>
+                                    <h5>Show Gallery</h5>
+                                </div>
+                                <img class="card-img-top" src="{{site.baseurl}}/assets/img/{{project.image}}" alt="Project image">
+                                <div class="card-block">
+                                    <h4 class="card-title">{{project.name}}</h4>
+                                    <p class="card-text">
+                                        {{project.text}}
+                                    </p>                                                                    
+                                </div>
+
+                            </div>                
+                        </div>
+                        {% endfor %}
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-2">
+                        <div class="go-back">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>            
+                    </div>
+                    <div class="col-md-8 project-title-wrapper">
+                        <h2 class="project-title"></h2>          
+                    </div>
+                </div>                
+            </div>  
+            <div class="project-load"></div>                        
+        </div>         
+    </div>    
+</section>
+<div class="jumbotron jumbotron-fluid equipment-container"></div>

@@ -1,0 +1,21 @@
+    #-------------------------------------------------------------------------
+# Clients section 
+
+clients:
+- name: Lorem
+  order: first
+  text: ' 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+  Aenean commodo ligula eget dolor. Aenean massa. 
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  
+- name: Ipsum
+  order: second
+  text: ' 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+  Aenean commodo ligula eget dolor. Aenean massa. 
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  
+- name: Cum
+  order: third
+  text: ' 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+  Aenean commodo ligula eget dolor. Aenean massa. 
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'

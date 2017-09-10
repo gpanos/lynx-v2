@@ -1,0 +1,18 @@
+#-------------------------------------------------------------------------
+# About section 
+
+aboutPhotos:
+- name: group1.jpg
+  order: first
+  
+- name: group2.jpg
+  order: second
+  
+- name: group3.jpg
+  order: third
+ 
+- name: group4.jpg
+  order: first
+  
+- name: group5.jpg
+  order: second  

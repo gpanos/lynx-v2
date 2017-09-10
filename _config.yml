@@ -1,0 +1,23 @@
+title: Lynx Pictures
+email: contact@lynx-pictures.net
+description: Production House in Paris
+meta: Lynx Pictrures Production Fiction Documantary Corporate Film Paris
+about-text: Lynx Pictrures Production Fiction Documantary Corporate Film Paris (Film, Production, Fiction, Documantary, Corporate)
+baseurl: ""
+url: "https://gpanos.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  gpanos
+languages: ["fr", "en"]
+defaultLang: fr
+languageNames:
+  fr: FR
+  en: EN
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

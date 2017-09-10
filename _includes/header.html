@@ -1,0 +1,73 @@
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-toggler float-xs-right" id="navbarSideButton">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <a href="#" class="navbar-brand" id="brand">
+                Lynx
+            </a>
+        </div>
+        <ul class="navbar-side" id="navbarSide">
+            <li class="social-links">
+                <a href="https://www.facebook.com">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fa fa-youtube"></i>
+                </a>
+
+            </li>
+            <li class="navbar-side-item">
+                <a href="#aboutUs">
+                About us
+                </a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#work">
+                Work
+                </a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#clients">
+                Testimonials
+                </a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#team">
+                Team
+                </a>
+            </li>
+            <li class="navbar-side-item">
+                <a href="#contact">
+                Contact
+                </a>
+            </li>
+            <li class="i18n-links">
+                <a class="active" href="#" id="selectedLang">{{ site.languageNames[site.lang] }}</a>
+                {% for lang in site.languageNames %}
+                {% if lang[0] == site.lang %} {% continue %} {% endif %}
+                {% if lang[0] == site.defaultLang %}
+                <a href="{{ site.baseurl_root }}/">{{ lang[1] }}</a>
+                {% else %}
+                <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+                {% endif %}
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid image-container vertical-center" >
+    <div class="container header-text">
+        <h1 id="siteName"><span>{{site.title}}</span></h1>
+        <p>{{site.description}}</p>
+        <a class="arrow-container" href="#aboutUs">
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </div>
+</div>

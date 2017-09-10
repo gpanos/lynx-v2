@@ -1,0 +1,113 @@
+.clients {
+    
+    h1 {
+        margin: 120px 0 60px 0;
+        text-transform: uppercase;
+        color: $headers-color;
+        letter-spacing: 1px;
+        
+            @include media-breakpoint-up(xs) { font-size: 40px; } // Small
+            @include media-breakpoint-up(sm) { font-size: 3.5rem;} // Medium
+            @include media-breakpoint-up(md) { font-size: 3.5rem; } // Large
+        
+    }
+    
+    .client-names {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+        
+        @include media-breakpoint-up(xs) { display: none; } // Small
+        @include media-breakpoint-up(sm) {display: block; } // Medium
+        @include media-breakpoint-up(md) { display: block; } // Large
+    }
+    
+    .client-name {
+        opacity: 0;
+        font-size: 20px;
+        margin-left : 1em;
+        margin-right : 1em;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+    }
+    
+    .client-name.active {
+        color: #000;
+        border-bottom: solid 2px black;
+    }
+    
+    .client-name:hover {
+        cursor: pointer;
+    }
+    
+    .close-quotes {
+        font-size: 40px;
+        position: absolute;
+        color: rgba(140, 140, 140, 0.4);
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .lead {
+        display: none;
+        text-align: center;
+        padding: 50px; 
+        color: $main-text-color;   
+    }
+    
+    .lead.active {
+        display: block;
+    }
+    
+    .mobile-selectors {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+         display: none;
+        
+        span {
+            display: inline-block;
+
+            height: 20px;
+            width: 20px;
+            margin-left : 1em;
+            margin-right : 1em;
+            border: solid 2px grey;
+            border-radius: 50%;
+        }
+        
+        span.active {
+            border: solid 2px black;
+        }
+        
+        @include media-breakpoint-up(xs) { display: block; } // Small
+        @include media-breakpoint-up(sm) {display: none; } // Medium
+        @include media-breakpoint-up(md) { display: none; } // Large
+    }
+    
+    .nav-text {
+        margin: 0 auto;
+        text-align: center;
+    }    
+    
+    .open-quotes {
+        font-size: 40px;
+        color: rgba(140, 140, 140, 0.4);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .text-container {
+        text-align: center;
+        opacity: 0;
+    }    
+    
+    .testimonials {
+        position: relative;
+        min-height: 200px;
+        min-width: 200px;
+        max-width: 80%;
+        margin: auto;
+    }    
+}
