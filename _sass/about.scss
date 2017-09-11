@@ -1,38 +1,55 @@
 .about-us {
-    
+
     h1 {
         margin: 120px 0 60px 0;
         text-transform: uppercase;
         letter-spacing: 1px;
         color: $headers-color;
-        
+
         @include media-breakpoint-up(xs) { font-size: 40px; } // Small
         @include media-breakpoint-up(sm) { font-size: 3.5rem;} // Medium
         @include media-breakpoint-up(md) { font-size: 3.5rem; } // Large
     }
-    .card {
-        opacity: 0;
+
+    .lead {
+        background: rgba(255,255,255,0.6);
+        padding: 15px;
+        color: #444444;
     }
-    .card img {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;   
-    }
-    
-    .group-image {
-        padding-left: 5px !important;
-        padding-right: 5px !important;   
-    }
-    
+
     .text-container {
+        opacity: 0;
         text-align: center;
         color: $main-text-color;
     }
-    
-    .images-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 100px 0 40px 0;    
-    }    
+
+    .jumbotron{
+        margin-bottom: 0px;
+        height: 100vh;
+        background:transparent;
+
+        @include media-breakpoint-up(xs) { height: 80vh } // Small
+        @include media-breakpoint-up(sm) { height: 100vh } // Medium
+        @include media-breakpoint-up(md) { height: 100vh } // Large
+    }
+
+    .vertical-center {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .image-container {
+        background-image: url('../assets/img/about-us-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+
+        @include media-breakpoint-up(xs) { background-attachment: initial} // Small
+        @include media-breakpoint-up(sm) { background-attachment: fixed } // Medium
+        @include media-breakpoint-up(md) { background-attachment: fixed } // Large
+
+    }
+
 }
