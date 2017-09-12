@@ -46,8 +46,16 @@
 
     .text-container {
         text-align: center;
-    }
+        display: flex;
+        align-items: center;
+        height: 100%;
 
+        @include media-breakpoint-down(sm) { flex-direction: column; justify-content: center;}
+        @include media-breakpoint-up(md) { flex-direction: row; }
+    }
+    .work-container{
+        @include media-breakpoint-down(sm) { padding-bottom: 2em;}
+    }
     .project-content {
         opacity: 0;
         z-index: 0;

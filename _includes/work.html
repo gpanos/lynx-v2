@@ -1,11 +1,11 @@
 <section class="work" id="work">
     <div class="jumbotron jumbotron-fluid image-container">
         <div class="work-wrapper">
-            <div class="container slider">
-                <div class="row">
-                    <div class="col-md-12 text-container">
+            <div class="container slider h-100">
+                <div class="row h-100">
+                    <div class="col-md-12  text-container">
                         {% for project in site.data.work.projects %}
-                        <div class="col-md-4 work-container"
+                        <div class="col-md-4 col-sm-8 col-xs-10 work-container"
                              data-file="{{project.file}}"
                         >
                             <div class="project-content add-animation" data-order="{{project.order}}">
