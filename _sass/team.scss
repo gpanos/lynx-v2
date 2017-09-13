@@ -1,76 +1,124 @@
 .team {
-    
+
     h1 {
-        margin: 120px 0 60px 0;
+        margin: 60px 0 20px 0;
         text-transform: uppercase;
         color: $headers-color;
         letter-spacing: 1px;
-        
+
         @include media-breakpoint-up(xs) { font-size: 40px; } // Small
         @include media-breakpoint-up(sm) { font-size: 3.5rem;} // Medium
         @include media-breakpoint-up(md) { font-size: 3.5rem; } // Large
     }
-    
-    .avatar {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
+    .jumbotron{
+        // margin-bottom: 0px;
+        // margin-top: 0px;
+        // padding-bottom: 0px;
+        // padding-top: 0px;
+        // height: auto;
+        // background:transparent;
+
+        @include media-breakpoint-up(xs) { height: auto } // Small
+        @include media-breakpoint-up(sm) { height: auto } // Medium
+        @include media-breakpoint-up(md) { height: 100vh } // Large
     }
-    
+    .team-members{
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(sm) { flex-direction: column; align-items: center;} // Medium
+        @include media-breakpoint-up(md) { flex-direction: row; } // Large
+    }
+    .card-overlay {
+      position: absolute;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1.25rem;
+    }
+    .lead {
+        text-align: center;
+        background: rgba(76, 88, 100, 0.7);
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 5px;
+
+        // @include media-breakpoint-down(md) { font-size: 1rem; } // Small
+
+    }
+    .image-container {
+        background-image: url('../assets/img/team-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+
+        @include media-breakpoint-up(xs) { background-attachment: fixed } // Small
+        @include media-breakpoint-up(sm) { background-attachment: fixed } // Medium
+        @include media-breakpoint-up(md) { background-attachment: fixed } // Large
+    }
+    // .avatar {
+    //     width: auto;
+    //     height: auto;
+    //     margin: 0 auto;
+    // }
+
     .description {
-        color: $main-text-color;
+        // color: $main-text-color;
+        line-height: 1.2rem;
     }
-    
+
     img {
         width:100%;
-        max-height:100%;
-        border-radius: 50%;
+        // max-height:60%;
+        // border-radius: 50%;
         border: solid 1px $light-orange;
-        
+
     }
-    
+
     .member-name {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        // margin-top: 30px;
+        // margin-bottom: 30px;
         text-transform: uppercase;
+        padding-top: 0.5rem;
     }
-    
+
     .text-container {
         text-align: center;
         opacity: 0;
-    }    
-    
+    }
+
     .team-member {
         opacity: 0;
     }
-    
+
     .team-members {
         margin-top: 20px;
         text-align: center;
     }
-    
+
     .member-media {
         text-align: center;
         font-size: 20px;
-        margin-bottom: 50px;
+        padding-bottom: 0.5rem;
     }
-    
+
     .member-media > a {
         display: inline-block;
         width: 40px;
         color: $dark-gray;
         opacity: 1;
     }
-    
+
     .member-media > a:hover {
         color: $light-orange;
         opacity: 0.5;
     }
-    
+
     .seperator {
         margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         width: 50%;
         border: solid 1px $light-gray;
     }

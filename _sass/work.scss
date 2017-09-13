@@ -54,7 +54,7 @@
         @include media-breakpoint-up(md) { flex-direction: row; }
     }
     .work-container{
-        @include media-breakpoint-down(sm) { padding-bottom: 2em;}
+        @include media-breakpoint-down(sm) { padding-bottom: 1em;}
     }
     .project-content {
         opacity: 0;
