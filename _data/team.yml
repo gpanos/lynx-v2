@@ -1,24 +1,24 @@
     #-------------------------------------------------------------------------
-# Team section 
+# Team section
 
 members:
 - name: Lorem
   order: first
-  avatar: avatar_1.jpg
-  text: ' 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
+  avatar: notcarl.png
+  text: ' 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aenean commodo ligula eget dolor. Aenean massa.
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
+
 - name: Ipsum
   order: second
-  avatar: avatar_1.jpg
-  text: ' 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
+  avatar: carl.png
+  text: ' 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+  Aenean commodo ligula eget dolor. Aenean massa.
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
-- name: Cum
-  order: third
-  avatar: avatar_1.jpg
-  text: ' 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+
+# - name: Cum
+#   order: third
+#   avatar: avatar_1.jpg
+#   text: ' 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+#   Aenean commodo ligula eget dolor. Aenean massa.
+#   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'

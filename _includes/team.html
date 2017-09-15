@@ -1,43 +1,94 @@
 <section class="team" id="team">
-    
-    <div class="container">
-        <div class="row">
-            <div class="container text-container title add-animation">
-                <h1 class="display-4">Team</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 team-members">
-                {% for member in site.data.team.members %}
-                <div class="col-md-4 team-member add-animation"
-                     data-order="{{member.order}}"
-                >
-                    <div class="avatar">
-                        <img src="{{site.baseurl}}/assets/img/{{member.avatar}}" alt="{{member.name}}">
-                    </div>
-                    <div class="member-name">
-                        <h5>{{member.name}}</h5>
-                    </div>
-                    <div class="description">
-                        {{member.text}}
-                    </div>
-                    <div class="seperator">                        
-                    </div>
-                    <div class="member-media">
-                        <a href="https://www.facebook.com">
-                            <i class="fa fa-facebook-square"></i>
-                        </a>
-                        <a href="https://twitter.com">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a href="https://youtube.com">
-                            <i class="fa fa-instagram"></i>
-                        </a>  
+
+    <div class="jumbotron jumbotron-fluid image-container">
+        <div class="team-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="container text-container title add-animation">
+                        <h1 class="display-4">Team</h1>
                     </div>
                 </div>
-                {% endfor %}
-            </div>        
+                <div class="row">
+                    <div class="col-md-12 team-members">
+                        {% for member in site.data.team.members %}
+                        <div class="col-lg-4 col-md-6 col-xs-12 col-sm-8 team-member add-animation"
+                             data-order="{{member.order}}"
+                        >
+                            <div class="card">
+                                <img class="card-img" src="{{site.baseurl}}/assets/img/{{member.avatar}}" alt="{{member.name}}">
+                                <div class="card-overlay ">
+                                    <div class="card-text lead">
+                                        <div class="member-name">
+                                            <h5>{{member.name}}</h5>
+                                        </div>
+                                        <div class="description">
+                                            {{member.text}}
+                                        </div>
+                                        <div class="seperator">
+                                        </div>
+                                        <div class="member-media">
+                                            <a href="https://www.facebook.com">
+                                                <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                            <a href="https://twitter.com">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                            <a href="https://youtube.com">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>    
-    
+    </div>
+
 </section>
+
+<!-- <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="container text-container title add-animation">
+                    <h1 class="display-4">Team</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 team-members">
+                    {% for member in site.data.team.members %}
+                    <div class="col-md-4 team-member add-animation"
+                         data-order="{{member.order}}"
+                    >
+                        <div class="avatar">
+                            <img src="{{site.baseurl}}/assets/img/{{member.avatar}}" alt="{{member.name}}">
+                        </div>
+                        <div class="member-name">
+                            <h5>{{member.name}}</h5>
+                        </div>
+                        <div class="description">
+                            {{member.text}}
+                        </div>
+                        <div class="seperator">
+                        </div>
+                        <div class="member-media">
+                            <a href="https://www.facebook.com">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://youtube.com">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+      </section>
+     -->

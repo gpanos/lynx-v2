@@ -1,5 +1,5 @@
 .contact {
-    
+
     .contact-form {
         z-index: 1;
         opacity: 0;
@@ -9,82 +9,83 @@
         background: #fff;
         color: #000;
         height: 520px;
-        
-        @include media-breakpoint-up(xs) { 
+
+        @include media-breakpoint-up(xs) {
             top: 0px;
             width: 100%;
             height: 100%;
         } // Small
-        @include media-breakpoint-up(sm) { 
+        @include media-breakpoint-up(sm) {
             top: 0px;
             width: 100%;
             height: 100%;
         } // Medium
-        @include media-breakpoint-up(md) { 
+        @include media-breakpoint-up(md) {
             width: 40%;
             top: 50px;
-            height: 450px;    
+            height: 450px;
+            margin: 20px;
         } // Large
     }
-    
+
     .contact-title {
         margin-top: 20px;
         margin-bottom: 40px;
-        
+
         h3 {
             font-size: 40px;
             font-weight: 200;
             letter-spacing: 2px;
         }
     }
-    
+
     .form-container {
         padding: 20px;
         text-align: center;
     }
-    
+
     .map-container {
         position: relative;
         padding: 0 !important;
         height: 570px;
-        margin-top: 100px;
+        // margin-top: 100px;
         overflow: hidden;
         display: block;
     }
-    
+
     .map {
         z-index: 0;
         width: 100%;
         max-width: 100%;
         height: 100%;
         display: block;
-        
-        @include media-breakpoint-up(xs) { 
+
+        @include media-breakpoint-up(xs) {
             visibility: hidden;
         } // Small
-        @include media-breakpoint-up(sm) { 
+        @include media-breakpoint-up(sm) {
             visibility: hidden;
         } // Medium
-        @include media-breakpoint-up(md) { 
+        @include media-breakpoint-up(md) {
             visibility: visible;
         } // Large
     }
-    
+
     .fa-paper-plane {
         opacity: 0;
         width: 0;
     }
-    
+
     .fa-paper-plane.animated.slideInRight {
         opacity: 1;
         margin-left: 5px;
         width: auto;
     }
-    
+
     textarea {
         resize: none;
     }
-    
+
     button {
         background-color: $button-color;
         color: #fff;
