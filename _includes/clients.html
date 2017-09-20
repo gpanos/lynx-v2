@@ -1,49 +1,40 @@
 <section class="clients" id="clients">
     <div class="jumbotron jumbotron-fluid image-container">
         <div class="clients-wrapper container">
-            <div class="d-flex flex-column justify-content-between">
-                <div class="row">
-                    <div class="container text-container title add-animation">
-                        <h1 class="display-4">Clients</h1>
+            <div class="">
+                <div class="testimonials add-animation">
+                    <div class="quotes open-quotes">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="testimonials add-animation"
-                    >
-                        <div class="quotes open-quotes">
-                            <i class="fa fa-quote-left" aria-hidden="true"></i>
-                        </div>
-                        <div class="quotes close-quotes">
-                            <i class="fa fa-quote-right" aria-hidden="true"></i>
-                        </div>
-                        {% for client in site.data.clients.clients %}
-                            <p class="lead testimonials">
-
-                                {{client.text}}
-                            </p>
-                        {% endfor %}
+                    <div class="quotes close-quotes">
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
                     </div>
+                    {% for client in site.data.clients.clients %}
+                        <p class="lead testimonials">
+                            {{client.text}}
+                        </p>
+                    {% endfor %}
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="client-names">
-                            <ul class="list-unstyled list-inline">
-                                {% for client in site.data.clients.clients %}
-                                    <li class="client-name client-selector list-inline-item add-animation"
-                                        data-order="{{client.order}}"
-                                        data-index="{{ forloop.index }}"
-                                    >{{client.name}}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                        <div class="mobile-selectors">
+            </div>
+            <div class="">
+                <div class="col-md-12">
+                    <div class="client-names">
+                        <ul class="list-unstyled list-inline">
                             {% for client in site.data.clients.clients %}
-                                <span class="client-selector"
-                                      data-order="{{client.order}}"
-                                      data-index="{{ forloop.index }}"
-                                ></span>
+                                <li class="client-name client-selector list-inline-item add-animation"
+                                    data-order="{{client.order}}"
+                                    data-index="{{ forloop.index }}"
+                                >{{client.name}}</li>
                             {% endfor %}
-                        </div>
+                        </ul>
+                    </div>
+                    <div class="mobile-selectors">
+                        {% for client in site.data.clients.clients %}
+                            <span class="client-selector"
+                                  data-order="{{client.order}}"
+                                  data-index="{{ forloop.index }}"
+                            ></span>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

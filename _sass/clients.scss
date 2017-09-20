@@ -36,7 +36,14 @@
 
     }
     .clients-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
+        @include media-breakpoint-up(xs) { padding: 40px 0 40px 0;} // extraSmall
+        @include media-breakpoint-up(sm) { padding: 0;} // Small
     }
     .client-names {
         margin-top: 40px;
