@@ -89,14 +89,14 @@
         background: rgba(255,255,255,0.6);
         padding: 15px;
         color: #444444;
-        // color: $main-text-color
-        ;
+
         @include media-breakpoint-down(xs) { font-size: 1rem; } // Small
 
     }
 
     .lead.active {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .mobile-selectors {

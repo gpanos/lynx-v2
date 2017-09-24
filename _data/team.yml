@@ -2,23 +2,22 @@
 # Team section
 
 members:
-- name: Lorem
+- name: Alexandre
   order: first
-  avatar: notcarl.png
-  text: ' 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  Aenean commodo ligula eget dolor. Aenean massa.
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  avatar: alexandre.png
+  firstTitle: firstTitleAlexandre
+  secondTitle: secondTitleAlexandre
+  thirdTitle: thirdTitleAlexandre
+  contactFacebook: https://www.facebook.com/lynxpicturesfrance
+  contactTwitter: https://twitter.com/lynx_pictures
+  contactMail: contact@lynx-pictures.net
 
-- name: Ipsum
+- name: Carl
   order: second
   avatar: carl.png
-  text: ' 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-  Aenean commodo ligula eget dolor. Aenean massa.
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-
-# - name: Cum
-#   order: third
-#   avatar: avatar_1.jpg
-#   text: ' 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-#   Aenean commodo ligula eget dolor. Aenean massa.
-#   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  firstTitle: firstTitleCarl
+  secondTitle: secondTitleCarl
+  thirdTitle: thirdTitleCarl
+  contactFacebook: https://www.facebook.com/lilesoundlibrary/
+  contactTwitter: https://twitter.com/Lilesound
+  contactMail: contact@lilesoundlibrary.com

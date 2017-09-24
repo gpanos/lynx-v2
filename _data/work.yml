@@ -1,27 +1,19 @@
 #-------------------------------------------------------------------------
-# Work section 
+# Work section
 
 projects:
 - name: Corporate
   order: first
   file: corporate
-  image: corporate.png
-  text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
+
 - name: Fictions
   order: second
   file: fiction
-  image: fiction.png
-  text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
+
 - name: Documentaries
   order: third
   file: documentary
-  image: documentary.png
-  text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-Aenean commodo ligula eget dolor. Aenean massa. 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+
+- name: Advertising
+  order: fourth
+  file: advertising

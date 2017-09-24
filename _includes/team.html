@@ -14,22 +14,23 @@
                                 <div class="card-overlay ">
                                     <div class="card-text lead">
                                         <div class="member-name">
-                                            <h5>{{member.name}}</h5>
+                                            <h3>{{member.name}}</h3>
                                         </div>
                                         <div class="description">
-                                            {{member.text}}
+                                            <p class="member-title">{% t teamSection.{{member.firstTitle}} %}</p>
+                                            <p class="member-title">{% t teamSection.{{member.secondTitle}} %}</p>
+                                            <p class="member-title">{% t teamSection.{{member.thirdTitle}} %}</p>
                                         </div>
-                                        <div class="seperator">
-                                        </div>
+                                        <div class="seperator"></div>
                                         <div class="member-media">
-                                            <a href="https://www.facebook.com">
+                                            <a href="{{member.contactFacebook}}">
                                                 <i class="fa fa-facebook-square"></i>
                                             </a>
-                                            <a href="https://twitter.com">
+                                            <a href="{{member.contactTwitter}}">
                                                 <i class="fa fa-twitter"></i>
                                             </a>
-                                            <a href="https://youtube.com">
-                                                <i class="fa fa-instagram"></i>
+                                            <a href="mailto:{{member.contactMail}}">
+                                                <i class="fa fa-envelope"></i>
                                             </a>
                                         </div>
                                     </div>

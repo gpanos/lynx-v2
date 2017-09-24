@@ -1,28 +1,9 @@
 .team {
-
-    h1 {
-        margin: 60px 0 20px 0;
-        text-transform: uppercase;
-        color: $headers-color;
-        letter-spacing: 1px;
-
-        @include media-breakpoint-up(xs) { font-size: 40px; } // Small
-        @include media-breakpoint-up(sm) { font-size: 3.5rem;} // Medium
-        @include media-breakpoint-up(md) { font-size: 3.5rem; } // Large
+    h3 {
+        margin-bottom: 20px;
     }
     .jumbotron{
-        // margin-bottom: 0px;
-        // margin-top: 0px;
-        // padding-bottom: 0px;
-        // padding-top: 0px;
-        // height: auto;
-        // background:transparent;
-
         @include media-breakpoint-up(xs) { height: auto } // extra Small
-        // @include media-breakpoint-up(sm) { height: auto } // Small
-        // @include media-breakpoint-up(md) { height: auto } // Medium
-        // @include media-breakpoint-up(lg) { height: 100vh; } // Large
-
     }
     .team-members{
         display: flex;
@@ -44,9 +25,6 @@
         color: #fff;
         font-size: 1rem;
         border-radius: 5px;
-
-        // @include media-breakpoint-down(md) { font-size: 1rem; } // Small
-
     }
     .image-container {
         background-image: url('../assets/img/team-bg.png');
@@ -59,30 +37,22 @@
         @include media-breakpoint-up(sm) { background-attachment: fixed } // Medium
         @include media-breakpoint-up(md) { background-attachment: fixed } // Large
     }
-    // .avatar {
-    //     width: auto;
-    //     height: auto;
-    //     margin: 0 auto;
-    // }
-
     .description {
-        // color: $main-text-color;
-        line-height: 1.2rem;
+        line-height: 1rem;
     }
 
     img {
         width:100%;
-        // max-height:60%;
-        // border-radius: 50%;
         border: solid 1px $light-orange;
-
     }
 
     .member-name {
-        // margin-top: 30px;
-        // margin-bottom: 30px;
-        text-transform: uppercase;
+        color: $light-orange;
         padding-top: 0.5rem;
+    }
+
+    .member-title {
+        text-transform: uppercase;
     }
 
     .text-container {
@@ -122,6 +92,6 @@
         margin-top: 5px;
         margin-bottom: 5px;
         width: 50%;
-        border: solid 1px $light-gray;
+        border: solid 1px $light-orange;
     }
 }

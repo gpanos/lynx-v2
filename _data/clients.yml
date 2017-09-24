@@ -1,21 +1,15 @@
     #-------------------------------------------------------------------------
-# Clients section 
+# Clients section
 
 clients:
-- name: Lorem
+- name: LilesoundStudioName
   order: first
-  text: ' 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
-- name: Ipsum
+  text: LilesoundStudioText
+
+- name: LilesoundStudioName
   order: second
-  text: ' 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
-  
-- name: Cum
+  text: LilesoundStudioText
+
+- name: LilesoundStudioName
   order: third
-  text: ' 3 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-  Aenean commodo ligula eget dolor. Aenean massa. 
-  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  text: LilesoundStudioText

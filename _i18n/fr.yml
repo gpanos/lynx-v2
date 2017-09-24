@@ -2,3 +2,41 @@ global:
   english: en
   french: fr
   aboutUs: À propos
+  work: Réalisations
+  clients: Clients
+  team: L’équipe
+  contact: Contact
+headerSection:
+  title: Lynx Pictures
+  description: Société de production française
+aboutSection:
+  title: À propos
+  text: Lynx Pictures est une société de production française novatrice. Nous vous accompagnons pour créer le contenu vidéo de votre choix, de l’idée jusqu’au produit fini. Notre objectif principal est de vous fournir un produit de qualité et moderne.
+workSection:
+  title: Work
+  Corporate: Entreprise
+  Fictions: Fictions
+  Documentaries: Documentaires
+  Advertising: La publicité
+clientSection:
+  LilesoundStudioName: Lilesound Studio
+  LilesoundStudioText: Lynx Pictures nous a fourni un excellent produit vidéo. C’est un plaisir de travail régulièrement avec eux.
+teamSection:
+  firstTitleAlexandre: Chef de projet
+  secondTitleAlexandre: Cadreur
+  thirdTitleAlexandre: Monteur image
+  firstTitleCarl: Chef de projet
+  secondTitleCarl: Preneur de son
+  thirdTitleCarl:  Concepteur de son
+contactSection:
+  title: Contactez nous
+  emailLabel: Adresse e-mail
+  emailPlaceholder: Email
+  nameLabel: Prénom
+  namePlaceholder: Prénom
+  messageLabel: Message
+  messagePlaceholder: Message
+  sendButton: Envoyer
+footerSection:
+  contactInfo: Informations de contact
+  siteInfo: Lynx pictures, site réalisé par

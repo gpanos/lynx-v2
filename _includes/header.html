@@ -11,40 +11,42 @@
         </div>
         <ul class="navbar-side" id="navbarSide">
             <li class="social-links">
-                <a href="https://www.facebook.com">
+                <a href="https://www.facebook.com/lynxpicturesfrance">
                     <i class="fa fa-facebook-square"></i>
                 </a>
-                <a href="https://twitter.com">
+                <a href="https://twitter.com/lynx_pictures">
                     <i class="fa fa-twitter"></i>
                 </a>
-                <a href="https://youtube.com">
+                <a href="https://www.instagram.com/lynx_pictures">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCO0E6mAhezbBEY7NLrZiCTA">
                     <i class="fa fa-youtube"></i>
                 </a>
-
             </li>
             <li class="navbar-side-item">
                 <a href="#aboutUs">
-                About us
+                    {% t global.aboutUs %}
                 </a>
             </li>
             <li class="navbar-side-item">
                 <a href="#work">
-                Work
+                    {% t global.work %}
                 </a>
             </li>
             <li class="navbar-side-item">
                 <a href="#clients">
-                Testimonials
+                    {% t global.clients %}
                 </a>
             </li>
             <li class="navbar-side-item">
                 <a href="#team">
-                Team
+                    {% t global.team %}
                 </a>
             </li>
             <li class="navbar-side-item">
                 <a href="#contact">
-                Contact
+                    {% t global.contact %}
                 </a>
             </li>
             <li class="i18n-links">
@@ -64,8 +66,8 @@
 
 <div class="jumbotron jumbotron-fluid image-container vertical-center" >
     <div class="container header-text">
-        <h1 id="siteName">{{site.title}}</h1>
-        <p>{{site.description}}</p>
+        <h1 id="siteName">{% t headerSection.title %}</h1>
+        <p>{% t headerSection.description %}</p>
         <a class="arrow-container" href="#aboutUs">
             <i class="fa fa-angle-down"></i>
         </a>

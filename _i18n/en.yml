@@ -2,3 +2,41 @@ global:
   english: en
   french: fr
   aboutUs: About us
+  work: Work
+  clients: Clients
+  team: Team
+  contact: Contact
+headerSection:
+  title: Lynx Pictures
+  description: French Production Company
+aboutSection:
+  title: About us
+  text: Lynx Pictures in an innovative french production company. We build with you creative content, from the idea to the result. Our main goal is to provide the best modern product.
+workSection:
+  title: Work
+  Corporate: Corporate
+  Fictions: Fictions
+  Documentaries: Documentaries
+  Advertising: Advertising
+clientSection:
+  LilesoundStudioName: Lilesound Studio
+  LilesoundStudioText: Lynx Pictures made us a really good movie. We can't wait to work with them again
+teamSection:
+  firstTitleAlexandre: Project manager
+  secondTitleAlexandre: Cameraman
+  thirdTitleAlexandre: Picture editor
+  firstTitleCarl: Project manager
+  secondTitleCarl: Sound engineer
+  thirdTitleCarl: Sound designer
+contactSection:
+  title: Contact us
+  emailLabel: Email address
+  emailPlaceholder: Email
+  nameLabel: Name
+  namePlaceholder: Name
+  messageLabel: Message
+  messagePlaceholder: Message
+  sendButton: Send
+footerSection:
+  contactInfo: Contact info
+  siteInfo: Lynx pictures, site made by

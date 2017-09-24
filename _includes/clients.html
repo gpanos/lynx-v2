@@ -11,7 +11,7 @@
                     </div>
                     {% for client in site.data.clients.clients %}
                         <p class="lead testimonials">
-                            {{client.text}}
+                            {% t clientSection.{{client.text}}%}
                         </p>
                     {% endfor %}
                 </div>
@@ -24,7 +24,7 @@
                                 <li class="client-name client-selector list-inline-item add-animation"
                                     data-order="{{client.order}}"
                                     data-index="{{ forloop.index }}"
-                                >{{client.name}}</li>
+                                >{% t clientSection.{{client.name}}%}</li>
                             {% endfor %}
                         </ul>
                     </div>

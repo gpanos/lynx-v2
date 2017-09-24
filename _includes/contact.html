@@ -1,49 +1,49 @@
 <section class="contact" id="contact">
-    
+
     <div class="jumbotron jumbotron-fluid map-container">
         <div class="contact-form add-animation">
             <div class="form-container">
                 <div class="row">
                     <div class="col-md-12 contact-title">
-                        <h3>Contact us</h3>
+                        <h3>{% t contactSection.title %}</h3>
                     </div>
                 </div>
-                <form action="https://formspree.io/{{site.email}}" 
+                <form action="https://formspree.io/{{site.email}}"
                       method="post"
                 >
                     <div class="row">
                         <div class="col-md-12">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                   <label class="sr-only" for="email">Email address</label>
-                                   <input type="email" class="form-control" id="email" placeholder="Email" name="_replyto">
+                                   <label class="sr-only" for="email">{% t contactSection.emailLabel %}</label>
+                                   <input type="email" class="form-control" id="email" placeholder="{% t contactSection.emailPlaceholder %}" name="_replyto">
                                  </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="sr-only" for="name">Name</label>
-                                    <input type="name" class="form-control" id="name" placeholder="Name" name="name">
+                                    <label class="sr-only" for="name">{% t contactSection.nameLabel %}</label>
+                                    <input type="name" class="form-control" id="name" placeholder="{% t contactSection.namePlaceholder %}" name="name">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="sr-only" for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="8" placeholder="Message" name=message></textarea>
+                                    <label class="sr-only" for="message">{% t contactSection.messageLabel %}</label>
+                                    <textarea class="form-control" id="message" rows="8" placeholder="{% t contactSection.messagePlaceholder %}" name=message></textarea>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="row">
                         <button type="submit" class="btn" id="contactButton">
-                            Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            {% t contactSection.sendButton %} <i class="fa fa-paper-plane" aria-hidden="true"></i>
                         </button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="map"
-             id="contactUsMap" 
+             id="contactUsMap"
         ></div>
     </div>
-    
+
 </section>
