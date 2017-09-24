@@ -2,8 +2,9 @@
     background-color: transparent !important;
     border-bottom: none !important;
     .navbar-header {
-        a {
-            color: white !important;
+        img {
+            -webkit-mask-box-image: url('../assets/img/logo-lynx-white.png');
+            background-color: orange;
         }
 
         .navbar-toggler {
@@ -19,8 +20,10 @@
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     .navbar-header {
-        a {
-            color: #343434;
+        img {
+            width:160px;
+            height: 60px;
+            -webkit-mask-box-image: url('../assets/img/logo-lynx-white.png');
         }
 
         .navbar-toggler {
@@ -35,19 +38,9 @@
     text-align: center;
     font-size: 30px;
     padding-top: 11px;
-
 }
 .navbar-toggler:hover{
     cursor: pointer;
-}
-.navbar-header {
-    a {
-        opacity: 1;
-        font-weight: 300;
-        font-size: 30px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
 }
 
 .navbar-side {
@@ -102,7 +95,6 @@
     display: inline-block;
     width: 40px;
     color: #444444;
-
 }
 
 .social-links > a:hover {
@@ -148,10 +140,8 @@
         clear:both;
     }
 
-    span {
-        display: inline-block;
-        padding: 0.2em 0.5em;
-        border: white solid 10px;
+    p {
+        font-size: 1.5rem;
     }
 }
 

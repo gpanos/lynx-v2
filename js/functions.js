@@ -179,11 +179,13 @@ function fixNavbar() {
         if (transparent) {
             transparent = false;
             $('nav[role="navigation"]').removeClass('navbar-transparent');
+            $("img").css("background-color", "#343434");
         }
     } else {
         if( !transparent ) {
             transparent = true;
             $('nav[role="navigation"]').addClass('navbar-transparent');
+            $("img").css("background-color", "orange");
         }
     }
 }
